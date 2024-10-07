@@ -1,3 +1,5 @@
+# Integrantes: Alissa Silva Cezero - RM552535, Melissa Barbosa de Souza - RM552535, Nicolas Paiffer do Carmo - RM554145
+
 # ClinicaAPI - Sistema de Gerenciamento de Clínicas Odontológicas
 
 ## Objetivo do Projeto
