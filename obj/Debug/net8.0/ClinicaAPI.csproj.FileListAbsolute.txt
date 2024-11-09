@@ -59,3 +59,4 @@ C:\Users\nicpa\OneDrive\Desktop\challenge\ClinicaAPI\obj\Debug\net8.0\refint\Cli
 C:\Users\nicpa\OneDrive\Desktop\challenge\ClinicaAPI\obj\Debug\net8.0\ClinicaAPI.pdb
 C:\Users\nicpa\OneDrive\Desktop\challenge\ClinicaAPI\obj\Debug\net8.0\ClinicaAPI.genruntimeconfig.cache
 C:\Users\nicpa\OneDrive\Desktop\challenge\ClinicaAPI\obj\Debug\net8.0\ref\ClinicaAPI.dll
+C:\Users\nicpa\OneDrive\Desktop\challenge\ClinicaAPI\obj\Debug\net8.0\ClinicaAPI.sourcelink.json

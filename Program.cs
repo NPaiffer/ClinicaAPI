@@ -3,21 +3,31 @@ using ClinicaAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adicionando a configuração do banco de dados Oracle
 builder.Services.AddDbContext<ClinicaContext>(options =>
     options.UseOracle(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins",
+        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
 
 var app = builder.Build();
 
-// Configuração do middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
+app.UseHttpsRedirection();
 app.UseRouting();
+app.UseCors("AllowAllOrigins");
 app.UseAuthorization();
 
 app.MapControllers();

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicpa\\OneDrive\\Desktop\\challenge\\ClinicaAPI\\ClinicaAPI.csproj": {}
+    "C:\\Users\\nicpa\\OneDrive\\Desktop\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\ClinicaAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicpa\\OneDrive\\Desktop\\challenge\\ClinicaAPI\\ClinicaAPI.csproj": {
+    "C:\\Users\\nicpa\\OneDrive\\Desktop\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\ClinicaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicpa\\OneDrive\\Desktop\\challenge\\ClinicaAPI\\ClinicaAPI.csproj",
+        "projectUniqueName": "C:\\Users\\nicpa\\OneDrive\\Desktop\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\ClinicaAPI.csproj",
         "projectName": "ClinicaAPI",
-        "projectPath": "C:\\Users\\nicpa\\OneDrive\\Desktop\\challenge\\ClinicaAPI\\ClinicaAPI.csproj",
+        "projectPath": "C:\\Users\\nicpa\\OneDrive\\Desktop\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\ClinicaAPI.csproj",
         "packagesPath": "C:\\Users\\nicpa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicpa\\OneDrive\\Desktop\\challenge\\ClinicaAPI\\obj\\",
+        "outputPath": "C:\\Users\\nicpa\\OneDrive\\Desktop\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nicpa\\AppData\\Roaming\\NuGet\\NuGet.Config"
