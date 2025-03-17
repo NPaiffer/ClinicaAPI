@@ -14,5 +14,13 @@ namespace ClinicaAPI.Data
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<Dentista> Dentistas { get; set; }
         public DbSet<Atendimento> Atendimentos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Atendimento>()
+                .HasKey(a => a.Id_Atendimento);
+        }
     }
 }

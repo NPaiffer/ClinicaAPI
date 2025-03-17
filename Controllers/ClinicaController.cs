@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Mvc;
 using ClinicaAPI.Data;
 using ClinicaAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace ClinicaAPI.Controllers
 {
@@ -23,7 +26,7 @@ namespace ClinicaAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Clinica>> GetClinica(int id)
+        public async Task<ActionResult<Clinica>> GetClinica(string id)
         {
             var clinica = await _context.Clinicas.FindAsync(id);
             if (clinica == null) return NotFound();
@@ -39,7 +42,7 @@ namespace ClinicaAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutClinica(int id, Clinica clinica)
+        public async Task<IActionResult> PutClinica(string id, Clinica clinica)
         {
             if (id != clinica.Cnpj_Clinica) return BadRequest();
 
@@ -59,7 +62,7 @@ namespace ClinicaAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteClinica(int id)
+        public async Task<IActionResult> DeleteClinica(string id)
         {
             var clinica = await _context.Clinicas.FindAsync(id);
             if (clinica == null) return NotFound();
@@ -69,7 +72,7 @@ namespace ClinicaAPI.Controllers
             return NoContent();
         }
 
-        private bool ClinicaExists(int id)
+        private bool ClinicaExists(string id)
         {
             return _context.Clinicas.Any(e => e.Cnpj_Clinica == id);
         }

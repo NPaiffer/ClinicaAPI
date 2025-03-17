@@ -1,8 +1,12 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace ClinicaAPI.Models
 {
     public class Dentista
     {
+        [Key]
         public int Cpf_Dentista { get; set; }
+
         public string? Nome_Dentista { get; set; }
         public string? Cro_Dentista { get; set; }
         public string? Especialidade { get; set; }

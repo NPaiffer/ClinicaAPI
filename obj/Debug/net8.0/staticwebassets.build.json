@@ -1,11 +1,228 @@
 {
   "Version": 1,
-  "Hash": "k4wVJp//lCdwMUmHKzowEn3jSbAPRwZO1K8ellTwfmc=",
+  "Hash": "09SstBcgrrkrgE+NCH6oD9wvFJv84iovPcUze/YXR3E=",
   "Source": "ClinicaAPI",
   "BasePath": "_content/ClinicaAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ClinicaAPI\\wwwroot",
+      "Source": "ClinicaAPI",
+      "ContentRoot": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\",
+      "BasePath": "_content/ClinicaAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\css\\site.css",
+      "SourceId": "ClinicaAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\",
+      "BasePath": "_content/ClinicaAPI",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6td1xt9gjb",
+      "Integrity": "1h4i2oBjo1GoK4YTOIC+PuqvGojRCo/sv4Uh6GpUo94=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\js\\site.js",
+      "SourceId": "ClinicaAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\",
+      "BasePath": "_content/ClinicaAPI",
+      "RelativePath": "js/site#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fknnhy3k85",
+      "Integrity": "D4DkvJ941rQx1FiXLCbkvNohhn9fb0fLFmTyZTJEsQU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/site.6td1xt9gjb.css",
+      "AssetFile": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1h4i2oBjo1GoK4YTOIC+PuqvGojRCo/sv4Uh6GpUo94=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 15:31:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6td1xt9gjb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1h4i2oBjo1GoK4YTOIC+PuqvGojRCo/sv4Uh6GpUo94="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1h4i2oBjo1GoK4YTOIC+PuqvGojRCo/sv4Uh6GpUo94=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 15:31:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1h4i2oBjo1GoK4YTOIC+PuqvGojRCo/sv4Uh6GpUo94="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.fknnhy3k85.js",
+      "AssetFile": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4DkvJ941rQx1FiXLCbkvNohhn9fb0fLFmTyZTJEsQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 15:31:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fknnhy3k85"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4DkvJ941rQx1FiXLCbkvNohhn9fb0fLFmTyZTJEsQU="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4DkvJ941rQx1FiXLCbkvNohhn9fb0fLFmTyZTJEsQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 15:31:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4DkvJ941rQx1FiXLCbkvNohhn9fb0fLFmTyZTJEsQU="
+        }
+      ]
+    }
+  ]
 }
