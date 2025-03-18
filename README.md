@@ -72,11 +72,6 @@ dotnet run
 - `PUT /api/clinica/{id}` - Atualiza os dados de uma clínica existente.
 - `DELETE /api/clinica/{id}` - Remove uma clínica do sistema.
 
-### Contato
-Se tiver dúvidas ou sugestões, entre em contato com a equipe pelo repositório **[ClinicaAPI no GitHub](https://github.com/NPaiffer/ClinicaAPI)**.
-
----
-
-Se precisar de mais alguma alteração, é só avisar! 🚀
+##### Este é o nosso projeto!
 
 
