@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2op+7OzY/Eg=",
+  "dgSpecHash": "P9vaPc8tAaM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\ClinicaAPI.csproj",
+  "projectFilePath": "C:\\Users\\nicpa\\Desktop\\ClinicaAPI\\ClinicaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicpa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\nicpa\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",

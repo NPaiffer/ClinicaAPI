@@ -9,6 +9,8 @@ builder.Services.AddDbContext<ClinicaContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient<IAuthService, AuthService>();
+
 
 builder.Services.AddCors(options =>
 {

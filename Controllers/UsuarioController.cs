@@ -92,5 +92,26 @@ namespace ClinicaAPI.Controllers
         {
             return _context.Usuarios.Any(e => e.Id_Usuario == id);
         }
-    }
+
+            private readonly IAuthService _authService;
+
+            public UsuarioController(IAuthService authService)
+            {
+                _authService = authService;
+            }
+
+            [HttpPost("login")]
+            public async Task<IActionResult> Login([FromBody] AuthRequest request)
+            {
+                var result = await _authService.LoginAsync(request);
+                return Ok(result);
+            }
+
+            [HttpPost("register")]
+            public async Task<IActionResult> Register([FromBody] AuthRequest request)
+            {
+                var result = await _authService.RegisterAsync(request);
+                return Ok(result);
+            }
+            }
 }

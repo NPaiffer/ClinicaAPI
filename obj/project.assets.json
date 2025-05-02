@@ -1892,11 +1892,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\ClinicaAPI.csproj",
+      "projectUniqueName": "C:\\Users\\nicpa\\Desktop\\ClinicaAPI\\ClinicaAPI.csproj",
       "projectName": "ClinicaAPI",
-      "projectPath": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\ClinicaAPI.csproj",
+      "projectPath": "C:\\Users\\nicpa\\Desktop\\ClinicaAPI\\ClinicaAPI.csproj",
       "packagesPath": "C:\\Users\\nicpa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\obj\\",
+      "outputPath": "C:\\Users\\nicpa\\Desktop\\ClinicaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
