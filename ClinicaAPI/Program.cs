@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using ClinicaAPI.Data;
 using ClinicaAPI.Services;
+using ClinicaAPI.Services.Interfaces;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +15,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<IAuthService, AuthService>();
 builder.Services.AddHttpClient<IViaCepService, ViaCepService>();
-
 
 
 builder.Services.AddCors(options =>

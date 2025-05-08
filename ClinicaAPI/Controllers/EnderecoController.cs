@@ -1,11 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using ClinicaAPI.Data;
 using ClinicaAPI.Models;
-using ClinicaAPI.Services;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using ClinicaAPI.Services.Interfaces;
 
 namespace ClinicaAPI.Controllers
 {
@@ -22,14 +19,12 @@ namespace ClinicaAPI.Controllers
             _viaCepService = viaCepService;
         }
 
-        // GET: api/Endereco
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Endereco>>> GetEnderecos()
         {
             return await _context.Enderecos.ToListAsync();
         }
 
-        // GET: api/Endereco/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Endereco>> GetEndereco(int id)
         {
@@ -38,7 +33,6 @@ namespace ClinicaAPI.Controllers
             return endereco;
         }
 
-        // POST: api/Endereco
         [HttpPost]
         public async Task<ActionResult<Endereco>> PostEndereco(Endereco endereco)
         {
@@ -47,7 +41,14 @@ namespace ClinicaAPI.Controllers
             return CreatedAtAction(nameof(GetEndereco), new { id = endereco.Id_Endereco }, endereco);
         }
 
-        // PUT: api/Endereco/5
+        [HttpGet("cep/{cep}")]
+        public async Task<ActionResult<Endereco>> ObterEnderecoPorCep(string cep)
+        {
+            var endereco = await _viaCepService.ObterEnderecoPorCepAsync(cep);
+            if (endereco == null) return NotFound("Endereço não encontrado para o CEP fornecido.");
+            return Ok(endereco);
+        }
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutEndereco(int id, Endereco endereco)
         {
@@ -68,7 +69,6 @@ namespace ClinicaAPI.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Endereco/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEndereco(int id)
         {
@@ -78,17 +78,6 @@ namespace ClinicaAPI.Controllers
             _context.Enderecos.Remove(endereco);
             await _context.SaveChangesAsync();
             return NoContent();
-        }
-
-        // NOVA ROTA: api/Endereco/consulta/01001000
-        [HttpGet("consulta/{cep}")]
-        public async Task<IActionResult> ConsultarCep(string cep)
-        {
-            var endereco = await _viaCepService.ConsultarCepAsync(cep);
-            if (endereco == null || endereco.Cep == null)
-                return NotFound(new { message = "CEP não encontrado" });
-
-            return Ok(endereco);
         }
 
         private bool EnderecoExists(int id)
