@@ -15,7 +15,6 @@ public class AuthServiceTests
     [Fact]
     public async Task LoginAsync_ReturnsToken()
     {
-        // Arrange
         var request = new AuthRequest { Email = "test@example.com", Password = "1234" };
         var expectedResponse = new AuthResponse { Token = "fake-token", UserId = "1", Message = "Success" };
 
@@ -36,10 +35,8 @@ public class AuthServiceTests
 
         var service = new AuthService(httpClient);
 
-        // Act
         var result = await service.LoginAsync(request);
 
-        // Assert
         Assert.Equal("fake-token", result.Token);
     }
 }

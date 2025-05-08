@@ -1,11 +1,11 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {

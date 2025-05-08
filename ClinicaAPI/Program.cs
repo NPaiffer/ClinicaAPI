@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ClinicaAPI.Data;
+using ClinicaAPI.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<IAuthService, AuthService>();
+builder.Services.AddHttpClient<IViaCepService, ViaCepService>();
+
 
 
 builder.Services.AddCors(options =>
@@ -27,6 +31,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseCors("AllowAllOrigins");
@@ -35,3 +40,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+public partial class Program { }
+

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "09SstBcgrrkrgE+NCH6oD9wvFJv84iovPcUze/YXR3E=",
+  "Hash": "S4nGnwAE+x3aNPFR169geXMg5eEc1oDL8yl8MSuOR+E=",
   "Source": "ClinicaAPI",
   "BasePath": "_content/ClinicaAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ClinicaAPI\\wwwroot",
       "Source": "ClinicaAPI",
-      "ContentRoot": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\",
       "BasePath": "_content/ClinicaAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\css\\site.css",
       "SourceId": "ClinicaAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\",
       "BasePath": "_content/ClinicaAPI",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\js\\site.js",
       "SourceId": "ClinicaAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\",
       "BasePath": "_content/ClinicaAPI",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -62,7 +62,7 @@
   "Endpoints": [
     {
       "Route": "css/site.6td1xt9gjb.css",
-      "AssetFile": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -83,7 +83,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 15:31:56 GMT"
+          "Value": "Fri, 02 May 2025 17:54:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -107,7 +107,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -128,7 +128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 15:31:56 GMT"
+          "Value": "Fri, 02 May 2025 17:54:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -144,7 +144,7 @@
     },
     {
       "Route": "js/site.fknnhy3k85.js",
-      "AssetFile": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -165,7 +165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 15:31:56 GMT"
+          "Value": "Fri, 02 May 2025 17:54:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -189,7 +189,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\nicpa\\Downloads\\dotnet_challenge2\\dotnet_challenge\\dotnet_challenge\\ClinicaAPI\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\nicpa\\Desktop\\ProjetoCS\\ClinicaAPI\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -210,7 +210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 15:31:56 GMT"
+          "Value": "Fri, 02 May 2025 17:54:48 GMT"
         },
         {
           "Name": "Cache-Control",

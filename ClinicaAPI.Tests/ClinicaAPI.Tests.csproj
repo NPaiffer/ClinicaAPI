@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClinicaAPI.csproj" />
+    <ProjectReference Include="..\\ClinicaAPI\\ClinicaAPI.csproj" />
   </ItemGroup>
 
 </Project>
