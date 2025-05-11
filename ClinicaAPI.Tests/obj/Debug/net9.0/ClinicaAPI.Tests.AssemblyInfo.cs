@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicaAPI.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+680285ba680c02195d6475e22b52be15c2e71120")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c7bcb1b3774f06b31821774b6cc183ddaba04bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicaAPI.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicaAPI.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

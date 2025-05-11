@@ -128,9 +128,9 @@ C:\Users\nicpa\Downloads\dotnet_challenge2\dotnet_challenge\dotnet_challenge\Cli
 C:\Users\nicpa\Downloads\dotnet_challenge2\dotnet_challenge\dotnet_challenge\ClinicaAPI\obj\Debug\net8.0\ClinicaAPI.csproj.Up2Date
 C:\Users\nicpa\Downloads\dotnet_challenge2\dotnet_challenge\dotnet_challenge\ClinicaAPI\obj\Debug\net8.0\ClinicaAPI.genruntimeconfig.cache
 C:\Users\nicpa\Downloads\dotnet_challenge2\dotnet_challenge\dotnet_challenge\ClinicaAPI\obj\Debug\net8.0\ref\ClinicaAPI.dll
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\xunit.abstractions.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\appsettings.json
-C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\xunit.abstractions.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\ClinicaAPI.staticwebassets.runtime.json
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\ClinicaAPI.staticwebassets.endpoints.json
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll
@@ -159,6 +159,7 @@ C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\Microsoft.OpenApi.d
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\Moq.dll
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\Oracle.EntityFrameworkCore.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\Oracle.ManagedDataAccess.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
