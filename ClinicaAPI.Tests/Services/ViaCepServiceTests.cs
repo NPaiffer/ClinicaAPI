@@ -19,7 +19,7 @@ public class ViaCepServiceTests
         var expectedEndereco = new Endereco
         {
             Cep = "01001-000",
-            Rua = "Praça da Sé",
+            Logradouro = "Praça da Sé",
             Bairro = "Sé",
             Cidade = "São Paulo",
             Estado = "SP"
@@ -53,7 +53,7 @@ public class ViaCepServiceTests
         var result = await viaCepService.GetEnderecoByCepAsync(cep);
 
         Assert.NotNull(result);
-        Assert.Equal(expectedEndereco.Rua, result.Rua);
+        Assert.Equal(expectedEndereco.Logradouro, result.Logradouro);
         Assert.Equal(expectedEndereco.Bairro, result.Bairro);
         Assert.Equal(expectedEndereco.Cidade, result.Cidade);
         Assert.Equal(expectedEndereco.Estado, result.Estado);

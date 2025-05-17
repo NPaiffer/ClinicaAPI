@@ -23,7 +23,7 @@ namespace ClinicaAPI.Tests.Integration
             var novoEndereco = new Endereco
             {
                 Logradouro = "Rua Exemplo",
-                Numero = "123",
+                Numero = 123,
                 Bairro = "Centro",
                 Cidade = "São Paulo",
                 Estado = "SP",

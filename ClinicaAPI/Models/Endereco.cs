@@ -4,15 +4,13 @@ namespace ClinicaAPI.Models
 {
     public class Endereco
     {
-        [Key]
-        public int Id_Endereco { get; set; } 
-
-        public string? Rua_Endereco { get; set; }
-        public int Numero_Endereco { get; set; }
-        public string? Complemento_Endereco { get; set; }
-        public string? Bairro_Endereco { get; set; }
-        public string? Cidade_Endereco { get; set; }
-        public string? Estado_Endereco { get; set; }
-        public int Cep { get; set; }
+        public string Cep { get; set; } = string.Empty;
+        public int Id_Endereco { get; set; }
+        public string Logradouro { get; set; } = string.Empty;
+        public int Numero { get; set; }
+        public string Bairro { get; set; } = string.Empty;
+        public string Cidade { get; set; } = string.Empty;
+        public string Estado { get; set; } = string.Empty;
     }
 }
+

@@ -1,5 +1,7 @@
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
 using ClinicaAPI.Models;
-using System.Net.Http.Json;
 using ClinicaAPI.Services.Interfaces;
 
 namespace ClinicaAPI.Services
@@ -13,17 +15,20 @@ namespace ClinicaAPI.Services
             _httpClient = httpClient;
         }
 
-        public async Task<Endereco?> ObterEnderecoPorCepAsync(string cep)
+        public async Task<Endereco?> GetEnderecoByCepAsync(string cep)
         {
-            try
-            {
-                var response = await _httpClient.GetFromJsonAsync<Endereco>($"https://viacep.com.br/ws/{cep}/json/");
-                return response;
-            }
-            catch
-            {
+            var response = await _httpClient.GetAsync($"https://viacep.com.br/ws/{cep}/json/");
+            if (!response.IsSuccessStatusCode)
                 return null;
-            }
+
+            var json = await response.Content.ReadAsStringAsync();
+            var endereco = JsonSerializer.Deserialize<Endereco>(json);
+            return endereco;
+        }
+
+        public Task<Endereco?> ObterEnderecoPorCepAsync(string cep)
+        {
+            throw new NotImplementedException();
         }
     }
 }
