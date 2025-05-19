@@ -1,12 +1,5 @@
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_ClinicaAPI.Tests
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_ClinicaAPI.Tests
-C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.csproj.AssemblyReference.cache
-C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\MvcTestingAppManifest.json
-C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.AssemblyInfoInputs.cache
-C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.AssemblyInfo.cs
-C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.csproj.CoreCompileInputs.cache
-C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.sourcelink.json
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\testhost.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\xunit.abstractions.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\ClinicaAPI.deps.json
@@ -443,6 +436,13 @@ C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\runtimes\win\
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\ClinicaAPI.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\bin\Debug\net9.0\ClinicaAPI.pdb
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.csproj.AssemblyReference.cache
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\MvcTestingAppManifest.json
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.AssemblyInfoInputs.cache
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.AssemblyInfo.cs
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.csproj.CoreCompileInputs.cache
+C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.sourcelink.json
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaA.4C1E4915.Up2Date
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\ClinicaAPI.Tests.dll
 C:\Users\nicpa\Desktop\ProjetoCS\ClinicaAPI.Tests\obj\Debug\net9.0\refint\ClinicaAPI.Tests.dll
