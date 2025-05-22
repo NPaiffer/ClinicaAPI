@@ -5,11 +5,11 @@ Alissa Silva Cezero - RM552535 <br> Melissa Barbosa de Souza - RM552535 <br> Nic
 
 Projeto desenvolvido para a disciplina de Desenvolvimento de API com ASP.NET Core, integrando funcionalidades de IA com ML.NET.
 
-## 📚 Descrição
+## Descrição
 
 O **ClinicaAPI** é uma aplicação RESTful desenvolvida em **.NET** para gerenciar informações de clínicas odontológicas, incluindo dados de dentistas, pacientes, atendimentos e outros. O objetivo do projeto é centralizar a gestão das informações da clínica, permitindo que dentistas possam registrar e acessar dados sobre pacientes e atendimentos de forma eficiente. Agora com integração ao ML.NET.
 
-## ⚙️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - ASP.NET Core 8
 - Entity Framework Core (Oracle)
@@ -19,7 +19,7 @@ O **ClinicaAPI** é uma aplicação RESTful desenvolvida em **.NET** para gerenc
 - Swagger
 - Visual Studio / .NET CLI
 
-## 💡 Funcionalidades
+## Funcionalidades
 
 - CRUD de clínicas, atendimentos e usuários.
 - Integração com ViaCEP para busca de endereços.
@@ -27,7 +27,7 @@ O **ClinicaAPI** é uma aplicação RESTful desenvolvida em **.NET** para gerenc
 - Treinamento e uso de modelo de **Análise de Sentimento** com ML.NET.
 - Testes automatizados com xUnit.
 
-## 📈 Funcionalidade de Análise de Sentimento
+## Funcionalidade de Análise de Sentimento
 
 A funcionalidade de IA foi implementada usando **ML.NET**, com um modelo treinado para classificar frases como positivas ou negativas. O endpoint disponível é:
 
@@ -45,7 +45,7 @@ Resposta:
 }
 ```
 
-## 🧪 Testes Automatizados
+## Testes Automatizados
 
 Os testes estão localizados no projeto `ClinicaAPI.Tests`, incluindo testes de integração e de controlador da API de sentimento. Exemplo de teste:
 
@@ -55,7 +55,7 @@ Os testes estão localizados no projeto `ClinicaAPI.Tests`, incluindo testes de 
 public async Task AnalyzeSentiment_ReturnsExpectedSentiment(string input, string expected)
 ```
 
-## ⚠️ Erros Pendentes
+## Erros Pendentes
 
 Apesar do progresso com a aplicação, alguns erros persistem na execução dos testes:
 
@@ -68,7 +68,7 @@ Apesar do progresso com a aplicação, alguns erros persistem na execução dos 
 
 **Infelizmente, o suporte em sala de aula foi limitado por conta de faltas do professor**, o que comprometeu o acompanhamento completo do nosso grupo para este projeto. Muitos dos problemas foram resolvidos com pesquisa e tentativa e erro.
 
-## ▶️ Como Executar
+## Como Executar
 
 1. Certifique-se de ter o .NET 8 SDK instalado.
 2. Configure sua connection string Oracle no `appsettings.json`.
