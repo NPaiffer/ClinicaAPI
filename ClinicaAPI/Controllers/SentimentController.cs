@@ -1,3 +1,4 @@
+using ClinicaAPI.Data;
 using ClinicaAPI.Service.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,14 +16,23 @@ namespace ClinicaAPI.Controllers
         }
 
         [HttpPost("analyze")]
-        public IActionResult AnalyzeSentiment([FromBody] SentimentRequest request)
+        public IActionResult AnalyzeSentiment([FromBody] SentimentData input)
         {
-            if (string.IsNullOrWhiteSpace(request.Text))
-                return BadRequest("Texto não pode estar vazio.");
+            if (string.IsNullOrWhiteSpace(input.Text))
+            {
+                return BadRequest("Texto não pode ser vazio.");
+            }
 
-            var result = _sentimentService.PredictSentiment(request.Text);
-            return Ok(new { Sentimento = result });
+            var prediction = _sentimentService.AnalyzeSentiment(input.Text);
+
+            if (prediction == null)
+            {
+                return StatusCode(500, "Erro ao processar a previsão de sentimento.");
+            }
+
+            return Ok(prediction);
         }
+
     }
 
     public class SentimentRequest

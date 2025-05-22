@@ -15,6 +15,11 @@ namespace ClinicaAPI.Service
             _predictionEngine = SentimentModel.LoadModel();
         }
 
+        public object AnalyzeSentiment(string text)
+        {
+            throw new NotImplementedException();
+        }
+
         public object Predict(DataModels.SentimentData input)
         {
             var mlInput = new MLModels.SentimentData

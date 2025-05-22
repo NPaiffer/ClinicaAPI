@@ -4,7 +4,7 @@ using ClinicaAPI.Services;
 using ClinicaAPI.Services.Interfaces;
 using ClinicaAPI.Service.Interfaces;
 using ClinicaAPI.Service;
-
+using ClinicaAPI.ML;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,7 +18,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<IAuthService, AuthService>();
 builder.Services.AddHttpClient<IViaCepService, ViaCepService>();
 builder.Services.AddScoped<ISentimentService, SentimentService>();
-
+SentimentModel.TrainAndSaveModel();
 
 
 builder.Services.AddCors(options =>

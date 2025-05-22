@@ -1,78 +1,82 @@
 # Integrantes: <br>
 Alissa Silva Cezero - RM552535 <br> Melissa Barbosa de Souza - RM552535 <br> Nicolas Paiffer do Carmo - RM554145
 
-# ClinicaAPI - Sistema de Gerenciamento de Clínicas Odontológicas
+# ClinicaAPI
 
-### Visão Geral do Projeto
+Projeto desenvolvido para a disciplina de Desenvolvimento de API com ASP.NET Core, integrando funcionalidades de IA com ML.NET.
 
-O **ClinicaAPI** é uma aplicação RESTful desenvolvida em **.NET** para gerenciar informações de clínicas odontológicas, incluindo dados de dentistas, pacientes, atendimentos e outros. O objetivo do projeto é centralizar a gestão das informações da clínica, permitindo que dentistas possam registrar e acessar dados sobre pacientes e atendimentos de forma eficiente.
+## 📚 Descrição
 
-### Funcionalidades Implementadas
-A aplicação atualmente permite:
+O **ClinicaAPI** é uma aplicação RESTful desenvolvida em **.NET** para gerenciar informações de clínicas odontológicas, incluindo dados de dentistas, pacientes, atendimentos e outros. O objetivo do projeto é centralizar a gestão das informações da clínica, permitindo que dentistas possam registrar e acessar dados sobre pacientes e atendimentos de forma eficiente. Agora com integração ao ML.NET.
 
-- Cadastro, consulta, atualização e exclusão de Usuários, Endereços, Telefones, Clínicas, Pacientes, Dentistas e Atendimentos.
-- Autenticação e autorização (com **JWT**) para controlar o acesso aos recursos da API.
-- Integração com o banco de dados **Oracle** para persistência e gerenciamento seguro dos dados.
-- Documentação da API via **Swagger/OpenAPI**, proporcionando descrições claras dos endpoints e modelos de dados.
-- Arquitetura baseada em camadas (Domain, Application, Infrastructure), garantindo escalabilidade e manutenção do código.
-- Implementação do padrão **Singleton** para gerenciamento de configurações.
+## ⚙️ Tecnologias Utilizadas
 
-### Escopo do Projeto
-O escopo atual do sistema é:
+- ASP.NET Core 8
+- Entity Framework Core (Oracle)
+- ML.NET
+- xUnit (para testes)
+- FluentAssertions
+- Swagger
+- Visual Studio / .NET CLI
 
-1. **Cadastro de Usuários e Pacientes**: Permite o gerenciamento completo das informações de cadastro.
-2. **Gerenciamento de Dentistas e Especialidades**: Registro e atualização dos dados profissionais.
-3. **Registro de Atendimentos**: Associando atendimentos a pacientes e dentistas de maneira centralizada.
-4. **Conexão com Banco de Dados Oracle**: Utilizado para garantir a persistência e integridade dos dados.
-5. **Operações CRUD (Create, Read, Update, Delete)** para todas as entidades.
+## 💡 Funcionalidades
 
-### Requisitos Funcionais
-- O sistema permite o cadastro de novos usuários, pacientes e dentistas.
-- Possibilita o gerenciamento de especialidades de dentistas.
-- Oferece uma API que permite realizar operações CRUD para todas as entidades.
-- Conecta-se ao banco de dados **Oracle** para persistência dos dados.
+- CRUD de clínicas, atendimentos e usuários.
+- Integração com ViaCEP para busca de endereços.
+- Integração com API de autenticação externa.
+- Treinamento e uso de modelo de **Análise de Sentimento** com ML.NET.
+- Testes automatizados com xUnit.
 
-### Requisitos Não Funcionais
-- **Performance**: A API responde em menos de **1 segundo** para operações simples.
-- **Padrão REST**: Segue o padrão REST para facilitar a integração com outras aplicações.
-- **Autenticação JWT**: Implementada para proteger os endpoints com autenticação baseada em JWT.
-- **Boas práticas de desenvolvimento**: Arquitetura baseada em camadas para escalabilidade e manutenção.
+## 📈 Funcionalidade de Análise de Sentimento
 
-### Instruções de Instalação e Configuração
+A funcionalidade de IA foi implementada usando **ML.NET**, com um modelo treinado para classificar frases como positivas ou negativas. O endpoint disponível é:
 
-#### 1. Pré-requisitos:
-
-- **.NET SDK** (versão compatível com o **ASP.NET Core** utilizado no projeto)
-- **Banco de dados Oracle** configurado e acessível com as permissões necessárias
-- **Visual Studio** ou **Visual Studio Code** instalado para desenvolvimento e execução
-
-#### 2. Instalação:
-
-Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/ClinicaAPI.git
-cd ClinicaAPI
+```
+POST /api/sentiment/analyze
+{
+  "text": "Eu estou muito feliz com o atendimento!"
+}
 ```
 
-Restaure as dependências:
-```bash
-dotnet restore
+Resposta:
+```json
+{
+  "sentimento": "Positivo"
+}
 ```
 
-Inicie a aplicação:
-```bash
-dotnet run
+## 🧪 Testes Automatizados
+
+Os testes estão localizados no projeto `ClinicaAPI.Tests`, incluindo testes de integração e de controlador da API de sentimento. Exemplo de teste:
+
+```csharp
+[Theory]
+[InlineData("Isso foi horrível", "Negativo")]
+public async Task AnalyzeSentiment_ReturnsExpectedSentiment(string input, string expected)
 ```
 
-#### 3. Uso da API:
-- Utilize ferramentas como **Postman** ou **Swagger** para testar os endpoints da API e verificar o funcionamento das operações CRUD.
+## ⚠️ Erros Pendentes
 
-#### 4. Endpoints Principais:
-- `GET /api/clinica` - Retorna todas as clínicas cadastradas.
-- `POST /api/clinica` - Cadastra uma nova clínica.
-- `PUT /api/clinica/{id}` - Atualiza os dados de uma clínica existente.
-- `DELETE /api/clinica/{id}` - Remove uma clínica do sistema.
+Apesar do progresso com a aplicação, alguns erros persistem na execução dos testes:
 
-##### Este é o nosso projeto!
+- Erro de carregamento do modelo ML quando executado pelo projeto de testes.
+- Testes de integração falhando com erro 500 (Internal Server Error).
+- Falta de diretório `ML/` ao rodar em contexto de testes (é criado apenas no projeto principal).
+- Dificuldade em realizar testes de integração por causa do acesso ao banco Oracle.
 
+### Motivo
 
+**Infelizmente, o suporte em sala de aula foi limitado por conta de faltas do professor**, o que comprometeu o acompanhamento completo do nosso grupo para este projeto. Muitos dos problemas foram resolvidos com pesquisa e tentativa e erro.
+
+## ▶️ Como Executar
+
+1. Certifique-se de ter o .NET 8 SDK instalado.
+2. Configure sua connection string Oracle no `appsettings.json`.
+3. Execute os seguintes comandos:
+
+```bash
+dotnet build
+dotnet run --project ClinicaAPI
+```
+
+Acesse a API em: [http://localhost:5194/swagger](http://localhost:5194/swagger)
