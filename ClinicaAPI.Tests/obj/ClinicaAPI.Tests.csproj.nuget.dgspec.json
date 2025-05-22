@@ -54,9 +54,13 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.Testing": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[9.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
@@ -161,7 +165,11 @@
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[4.0.2, )"
             },
             "Moq": {
               "target": "Package",
@@ -169,7 +177,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.3, )"
             },
             "Oracle.EntityFrameworkCore": {
               "target": "Package",

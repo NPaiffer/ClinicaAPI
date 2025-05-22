@@ -1,11 +1,10 @@
-using ClinicaAPI.Data;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
-using System;
 using System.Linq;
+using ClinicaAPI.Data;
 
 namespace ClinicaAPI.Tests.Utils
 {
@@ -17,7 +16,6 @@ namespace ClinicaAPI.Tests.Utils
             {
                 var descriptor = services.SingleOrDefault(
                     d => d.ServiceType == typeof(DbContextOptions<ClinicaContext>));
-
                 if (descriptor != null)
                 {
                     services.Remove(descriptor);
@@ -27,11 +25,6 @@ namespace ClinicaAPI.Tests.Utils
                 {
                     options.UseInMemoryDatabase("TestDb");
                 });
-
-                var sp = services.BuildServiceProvider();
-                using var scope = sp.CreateScope();
-                var db = scope.ServiceProvider.GetRequiredService<ClinicaContext>();
-                db.Database.EnsureCreated();
             });
 
             return base.CreateHost(builder);

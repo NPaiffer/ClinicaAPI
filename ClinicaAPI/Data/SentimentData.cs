@@ -5,7 +5,8 @@ namespace ClinicaAPI.Data
     public class SentimentData
     {
         [LoadColumn(0)]
-        public string Text { get; set; }
+        public string? Text { get; set; }
+        public bool Label { get; internal set; }
     }
 
     public class SentimentPrediction : SentimentData
